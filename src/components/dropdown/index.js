@@ -188,11 +188,7 @@ export default class Dropdown extends PureComponent {
     };
   }
 
-  componentWillReceiveProps({ value }) {
-    if (value !== this.props.value) {
-      this.setState({ value });
-    }
-  }
+ 
 
   //last version
   static getDerivedStateFromProps(props, state) {
@@ -212,7 +208,7 @@ export default class Dropdown extends PureComponent {
 
   componentWillUnmount() {
     this.mounted = false;
-  }
+  } 
 
   onPress(event) {
     let {
